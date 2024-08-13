@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenLeaf - Eco-Friendly Product</title>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+<div class="nav">
+    <header>
+        <nav>
+            <div class="logo">
+                <h2 class="green">Green</h2><h2 class="leaf">Leaf</h2>
+            </div>
+
+            <ul class="navigation">
+
+            <div class="toggle-switch" style="color: white;">
+                <input type="checkbox" id="dark-mode-toggle">
+                <label for="dark-mode-toggle">Dark Mode</label>
+            </div>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#sections-container">Features</a></li>
+                <li><a href="#sections-container">Testimonials</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact-form">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</div>
+<div class="body">
+    <section id="hero">
+
+        <h1>Welcome to GreenLeaf</h1>
+        <p> Your Trusted Partner in Embracing a Sustainable Lifestyle and Making Eco-Friendly Choices for a Greener Future.</p>
+        <a href="#features" class="button">Learn More</a>
+
+</section>
+
+<!-- Sections Container -->
+<section id="sections-container">
+
+    <div id="features">
+        <h2>Features</h2>
+        <div class="feature">
+            <i class="bi bi-leaf"></i>
+            <h3>Sustainability</h3>
+            <p>Eco-friendly materials and processes.</p>
+        </div>
+        <div class="feature">
+            <i class="bi bi-lightbulb"></i>
+            <h3>Energy Efficiency</h3>
+            <p>Save energy and reduce bills.</p>
+        </div>
+        <div class="feature">
+            <i class="bi bi-recycle"></i>
+            <h3>Recyclable</h3>
+            <p>Easy to recycle materials.</p>
+        </div>
+    </div>
+
+    <div id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+            <img src="img/customer1.jpg" alt="Customer 1">
+            <div>
+                <blockquote>"Fantastic products!"</blockquote>
+                <p>- Alex Johnson</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <img src="img/customer2.jpg" alt="Customer 2">
+            <div>
+                <blockquote>"Highly recommended."</blockquote>
+                <p>- Maria Smith</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <img src="img/customer3.jpg" alt="Customer 3">
+            <div>
+                <blockquote>"A perfect blend of innovation and sustainability."</blockquote>
+                <p>- James Brown</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+   
+<!-- Pricing Section -->
+<section id="pricing">
+    <h2>Pricing Options</h2>
+    <div class="p-option">
+        <h3>Basic Plan</h3>
+        <p class="price">$29/month</p>
+        <ul>
+            <li>Access to Eco-Friendly Basics</li>
+            <li>Standard Support</li>
+            <li>Product Essentials</li>
+            <li>Basic Green Living Tips</li>
+        </ul>
+        <a href="#" class="button">Choose Plan</a>
+    </div>
+    <div class="p-option">
+        <h3>Pro Plan</h3>
+        <p class="price">$59/month</p>
+        <ul>
+            <li>All Basic Plan Features</li>
+            <li>Priority Support</li>
+            <li>Extended Product Access</li>
+            <li>Enhanced Green Living Tips</li>
+            <li>Sustainability Reports</li>
+        </ul>
+        <a href="#" class="button">Choose Plan</a>
+    </div>
+    <div class="p-option">
+        <h3>Premium Plan</h3>
+        <p class="price">$99/month</p>
+        <ul>
+            <li>All Pro Plan Features</li>
+            <li>Premium Support</li>
+            <li>Unlimited Product Access</li>
+            <li>Exclusive Sustainability Resources</li>
+            <li>Early Access to New Features</li>
+        </ul>
+        <a href="#" class="button">Choose Plan</a>
+    </div>
+</section>
+
+
+    <!-- Contact Form Section -->
+    <section id="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</div>
+   <footer>
+    <div class="footer-container">
+        <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2024 GreenLeaf. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+    const toggleSwitch = document.getElementById('dark-mode-toggle');
+const body = document.body;
+
+toggleSwitch.addEventListener('change', function() {
+    body.classList.toggle('dark-mode');
+});
+</script>
+</body>
+</html>
