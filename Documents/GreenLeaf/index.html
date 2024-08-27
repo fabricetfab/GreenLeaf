@@ -14,7 +14,11 @@
             <div class="logo">
                 <h2 class="green">Green</h2><h2 class="leaf">Leaf</h2>
             </div>
-
+            <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
             <ul class="navigation">
 
             <div class="toggle-switch" style="color: white;">
@@ -22,8 +26,8 @@
                 <label for="dark-mode-toggle">Dark Mode</label>
             </div>
                 <li><a href="#hero">Home</a></li>
-                <li><a href="#sections-container">Features</a></li>
-                <li><a href="#sections-container">Testimonials</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact-form">Contact</a></li>
             </ul>
@@ -165,6 +169,10 @@ const body = document.body;
 toggleSwitch.addEventListener('change', function() {
     body.classList.toggle('dark-mode');
 });
+function toggleMenu() {
+            document.querySelector('.nav').classList.toggle('active');
+        }
 </script>
+
 </body>
 </html>
