@@ -415,6 +415,18 @@ body.dark-mode #contact-form {
     color: Black;
 }
 
+.hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            margin: 3px;
+            transition: 0.4s;
+        }
 
 body.dark-mode footer {
     background-color: #333;
@@ -441,4 +453,73 @@ body.dark-mode a {
 
 body.dark-mode a:hover {
     color: #66BB6A; 
+}
+
+@media (max-width: 848px) {
+            nav {
+                position: relative;
+                padding: 10px;
+            }
+            
+            nav ul {
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+            nav ul li {
+                margin-left: 0;
+                margin-top: 10px;
+                width: 100%;
+                text-align: left;
+            }
+            nav ul li:first-child {
+                margin-top: 0;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .nav ul{
+                position: relative;
+            }
+            .nav.active ul {
+                display: flex;
+                position: absolute;
+                width: 30%;
+                background-color: #0D47A1;
+                height: auto;
+                border: 1px solid white;
+                border-radius: 5px;
+                right: 50px;
+                padding: 10px;
+                margin-top: 190px;
+            }
+            body.dark-mode .nav ul{
+                background-color: #333;
+                color: #E0E0E0;
+            }
+            body.dark-mode .hamburger div{
+                background-color: #E0E0E0;
+            }
+        }
+
+@media (max-width: 402px) {
+    .nav.active ul {
+                width: 45%;
+            }
+}
+
+@media (max-width: 388px) {
+    #hero{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 265px) {
+    #hero{
+        height: 120vh;
+    }
+    .nav.active ul {
+        width: 55%;
+    }
 }
